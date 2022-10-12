@@ -1,0 +1,36 @@
+plan:
+    rules:
+        functions:
+            gameover:
+                if player has 0 points game over/ask to restart
+            win condition:
+                if player has x points they win
+            lose condition:
+                if player has 0 or negative points they lose and goes to game over
+    gameclass:
+        functions:
+            run/play game:
+                runs the code and processes the players choice
+            point add/subtract:
+                adds 100 upon correct guess
+                subtracts 75 upon incorrect guess
+            game start/end:
+                starts the game and then ends game if user wants the game to end
+            print:
+                prints the current card, choice, next card, and point value to screen
+    playerClass:
+        functions: 
+            choice:
+                asks the user for a choice h/l
+            end game:
+                asks the user if they will end game
+            point system:
+                starts the player with 300 points and keeps track of points
+    cardclass:
+        functions: 
+            cards:
+                creates 1-13 int
+            draw card:
+                creates another 1-13 card
+            compare card:
+                compares card and net card and determines whichj is higher or lower.
